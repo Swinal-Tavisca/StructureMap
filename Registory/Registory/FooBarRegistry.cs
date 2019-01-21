@@ -21,7 +21,7 @@ namespace Registory
             // 3.  Pre-existing object
             //For<IBar>().Add(new Bar());
 
-
+                
         }
     }
 }

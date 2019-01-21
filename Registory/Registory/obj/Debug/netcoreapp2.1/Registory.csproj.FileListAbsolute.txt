@@ -9,3 +9,14 @@ C:\Users\PC\Desktop\structure map\Registory\Registory\bin\Debug\netcoreapp2.1\Re
 C:\Users\PC\Desktop\structure map\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.pdb
 C:\Users\PC\Desktop\structure map\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.dll
 C:\Users\PC\Desktop\structure map\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.pdb
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.deps.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.runtimeconfig.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.runtimeconfig.dev.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.dll
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\bin\Debug\netcoreapp2.1\Registory.pdb
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.csprojAssemblyReference.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.csproj.CoreCompileInputs.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.AssemblyInfoInputs.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.AssemblyInfo.cs
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.dll
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse2\StructureMap\Registory\Registory\obj\Debug\netcoreapp2.1\Registory.pdb

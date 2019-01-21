@@ -64,13 +64,92 @@ namespace Registory
             //callingBar.bar();
 
             //TRY GETTING OPTIONAL SERVICE BY PLUGIN TYPE
-            var container = new Container();
-            var foo = container.TryGetInstance<IFoo>()
-                ?? new Foo();
-                
-        
-        
-            Console.ReadKey();
+            //var container = new Container();
+            //var foo = container.TryGetInstance<IFoo>()
+            //    ?? new Foo();
+
+            //              CONTAINER
+            //1. CHILD CONTAINERS
+            // var parentContainer = new Container(x =>
+            //      {
+            //          x.For<IBar>().Use<Bar>();
+            //          x.For<IFoo>().Use<Foo>();
+            //      });
+            // var childContainer = parentContainer.CreateChildContainer();
+            // childContainer.Configure(x =>
+            //{
+            //    x.For<IBar>().Use<Bar2>();
+            //});
+            // var callingBar = childContainer.GetInstance<IBar>();
+            // callingBar.bar();
+            // 2. PROFILES
+            //IContainer container = new Container(registry =>
+            //  {
+            //      registry.Profile("Something", p =>
+            //      {
+            //          p.For<IBar>().Use<Bar>();
+            //          p.For<IFoo>().Use<Foo>();
+            //      });
+
+            //  });
+            //var profile = container.GetProfile("Something");
+            //var callingBar = profile.GetInstance<IBar>();
+            //callingBar.bar();
+            //3.CHILD CONTAINER AND SINGLETON
+
+            //var parentContainer = new Container(_ =>
+            //{
+            //    _.For<IBar>().Use<Bar>();
+            //    _.For<IFoo>().Use<Foo>();
+
+            //});
+            //var child1 = parentContainer.CreateChildContainer();
+            //child1.Configure(x =>
+            //{
+            //    x.ForSingletonOf<IBar>().Use<Bar>();
+            //});
+            //var child2 = parentContainer.CreateChildContainer();
+            //child2.Configure(x =>
+            //{
+            //    x.ForSingletonOf<IBar>().Use<Bar2>();
+            //});
+            //var callingViaChild1=child1.GetInstance<IBar>();
+            //callingViaChild1.bar();
+
+            //var callingViaChild2 = child2.GetInstance<IBar>();
+            //callingViaChild2.bar();
+            //4. CREATING A NESTED CONTAINER FROM A CHILD CONTAINER
+            //var parentContainer = new Container(_ =>
+            // {
+            //     _.For<IBar>().Use<Bar>();
+            //     _.For<IFoo>().Use<Foo>();
+
+            // });
+            //var childContainer1 = parentContainer.CreateChildContainer();
+            //childContainer1.Configure(_ =>
+            //{
+            //    _.For<IBar>().Use<Bar2>();
+            //});
+            //using (var nested = childContainer1.GetNestedContainer())
+            //{
+            //    var callingBar = nested.GetInstance<IBar>();
+            //    callingBar.bar();
+            //}
+            //      NESTED CONTAINERS (PER REQUEST/TRANSACTIONS)
+            //1. CREATION
+            var container = new Container(_ =>
+              {
+                  _.For<IBar>().Use<Bar>();
+                  _.For<IFoo>().Use<Foo>();
+              });
+            using (var nested = container.GetNestedContainer())
+            {
+                var worker = nested.GetInstance<IBar>();
+                worker.bar();
+            }
+
+
+                Console.ReadKey();
 
         }
     }
