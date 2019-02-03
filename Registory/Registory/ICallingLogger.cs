@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Registory
 {
-    public interface IFoo
+    public interface ICallingLogger
     {
-        void foo();
+        void toLog();
     }
 }

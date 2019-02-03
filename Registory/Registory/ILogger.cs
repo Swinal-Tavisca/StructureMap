@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Registory
 {
-    public interface IBar
+    public interface ILogger
     {
-        void bar();
+        void implimenting_logging();
     }
 }
