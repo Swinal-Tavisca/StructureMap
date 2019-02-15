@@ -34,7 +34,7 @@ namespace Registory
             // var callingColorWIdget = container.GetInstance<IWidget>();
             // callingColorWIdget.color();
 
-            
+
             // //RESOLVING SERVICES
             // //1.GETTING SERVICES BY PLUGING TYPE
             // var container = new Container(x =>
@@ -73,19 +73,22 @@ namespace Registory
 
 
             //********//CONTAINER\\***********\\
-            // //1.CHILD CONTAINERS
-            // var parentContainer = new Container(x =>
-            //      {
-            //          x.For<ICallingLogger>().Use<CallingLogger>();
-            //          x.For<ILogger>().Use<Logger>();
-            //      });
-            // var childContainer = parentContainer.CreateChildContainer();
-            // childContainer.Configure(x =>
+
+            //// //1.CHILD CONTAINERS
+            //var parentContainer = new Container(x =>
+            //     {
+            //         x.For<ICallingLogger>().Use<CallingLogger>();
+            //         x.For<ILogger>().Use<Logger>();
+            //     });
+            //var childContainer = parentContainer.CreateChildContainer();
+            //childContainer.Configure(x =>
             //{
-            //    x.For<ICallingLogger>().Use<CallingLogger2>();
+            //   x.For<ICallingLogger>().Use<CallingLogger2>();
             //});
-            // var callingLogger = childContainer.GetInstance<ICallingLogger>();
-            // callingLogger.bar();
+            //var callingLogger = childContainer.GetInstance<ICallingLogger>();
+            //callingLogger.toLog();
+
+
             // //2.PROFILES
             // IContainer container = new Container(registry =>
             //   {
@@ -99,46 +102,51 @@ namespace Registory
             // var profile = container.GetProfile("Something");
             // var callingLogger = profile.GetInstance<ICallingLogger>();
             // callingLogger.bar();
+
             // //3.CHILD CONTAINER AND SINGLETON
 
-            // var parentContainer = new Container(_ =>
-            // {
-            //     _.For<ICallingLogger>().Use<CallingLogger>();
-            //     _.For<ILogger>().Use<Logger>();
-
-            // });
-            // var child1 = parentContainer.CreateChildContainer();
-            // child1.Configure(x =>
-            // {
-            //     x.ForSingletonOf<ICallingLogger>().Use<CallingLogger>();
-            // });
-            // var child2 = parentContainer.CreateChildContainer();
-            // child2.Configure(x =>
-            // {
-            //     x.ForSingletonOf<ICallingLogger>().Use<CallingLogger2>();
-            // });
-            // var callingViaChild1 = child1.GetInstance<ICallingLogger>();
-            // callingViaChild1.bar();
-
-            // var callingViaChild2 = child2.GetInstance<ICallingLogger>();
-            // callingViaChild2.bar();
-            // //4.CREATING A NESTED CONTAINER FROM A CHILD CONTAINER
             //var parentContainer = new Container(_ =>
-            // {
+            //{
+            //    _.For<ICallingLogger>().Use<CallingLogger>();
+            //    _.For<ILogger>().Use<Logger>();
+
+            //});
+            //var child1 = parentContainer.CreateChildContainer();
+            //child1.Configure(x =>
+            //{
+            //    x.ForSingletonOf<ICallingLogger>().Use<CallingLogger>();
+            //});
+            //var child2 = parentContainer.CreateChildContainer();
+            //child2.Configure(x =>
+            //{
+            //    x.ForSingletonOf<ICallingLogger>().Use<CallingLogger2>();
+            //});
+            //var callingViaChild1 = child1.GetInstance<ICallingLogger>();
+            //callingViaChild1.toLog();
+
+            //var callingViaChild2 = child2.GetInstance<ICallingLogger>();
+            //callingViaChild2.toLog();
+
+
+            //// //4.CREATING A NESTED CONTAINER FROM A CHILD CONTAINER
+            //var parentContainer = new Container(_ =>
+            //{
             //     _.For<ICallingLogger>().Use<CallingLogger>();
             //     _.For<ILogger>().Use<Logger>();
 
-            // });
-            // var childContainer1 = parentContainer.CreateChildContainer();
-            // childContainer1.Configure(_ =>
-            // {
-            //     _.For<ICallingLogger>().Use<CallingLogger2>();
-            // });
-            // using (var nested = childContainer1.GetNestedContainer())
-            // {
-            //     var callingLogger = nested.GetInstance<ICallingLogger>();
-            //     callingLogger.bar();
-            // }
+            //});
+            //var childContainer1 = parentContainer.CreateChildContainer();
+            //childContainer1.Configure(_ =>
+            //{
+            //    _.For<ICallingLogger>().Use<CallingLogger2>();
+            //});
+            //using (var nested = childContainer1.GetNestedContainer())
+            //{
+            //    var callingLogger = nested.GetInstance<ICallingLogger>();
+            //    callingLogger.toLog();
+            //}
+
+
             // //NESTED CONTAINERS(PER REQUEST/ TRANSACTIONS)
             // //1.CREATION
             // var container = new Container(_ =>
@@ -151,6 +159,7 @@ namespace Registory
             //     var worker = nested.GetInstance<ICallingLogger>();
             //     worker.bar();
             // };
+
             // //USING TRANSIENT AND NESTED CONTAINERS
             // var container = new Container(_ =>
             // {
@@ -159,6 +168,7 @@ namespace Registory
             // });
             // //var callingLogger = container.GetInstance<IBar>();//instance is build on every request
             // //callingLogger.bar();
+
             // //^ Same container {using nested containers so trainsient lifecycle is created using nested containers}
             // using (var nested = container.GetNestedContainer())
             // {
