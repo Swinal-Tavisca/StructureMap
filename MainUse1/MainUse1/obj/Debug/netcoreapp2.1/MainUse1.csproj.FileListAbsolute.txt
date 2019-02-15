@@ -1,0 +1,11 @@
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\bin\Debug\netcoreapp2.1\MainUse1.deps.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\bin\Debug\netcoreapp2.1\MainUse1.runtimeconfig.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\bin\Debug\netcoreapp2.1\MainUse1.runtimeconfig.dev.json
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\bin\Debug\netcoreapp2.1\MainUse1.dll
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.csprojAssemblyReference.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.csproj.CoreCompileInputs.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.AssemblyInfoInputs.cache
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.AssemblyInfo.cs
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\bin\Debug\netcoreapp2.1\MainUse1.pdb
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.dll
+C:\Users\swinal\Desktop\StructureMApPOC\MainUse1\MainUse1\obj\Debug\netcoreapp2.1\MainUse1.pdb
